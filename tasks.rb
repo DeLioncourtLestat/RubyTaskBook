@@ -27,7 +27,7 @@ puts "task3"
 i = array.each.find do |a|
   a > array[0] && a < array[-1]
 end
-p i
+p array.index(i)
 
 # Task 4 Дан целочисленный массив.
 # Вывести номер последнего из тех его элементов, которые удовлетворяют двойному неравенству:
@@ -37,7 +37,7 @@ puts "task4"
 ar = array.each.find_all do |a|
   a > array[0] && a < array[-1]
 end
-p ar.last
+p array.index(ar.last)
 
 # Task 5 Дан целочисленный массив.
 # Преобразовать его, прибавив к четным числам первый элемент.
